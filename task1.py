@@ -24,4 +24,13 @@ The animal at that index is Dog
 
 
 
-animals =
+animals =("Cat","Fish","Dog","Bear","Turtle")
+sorted_list=sorted(animals)
+for element in sorted_list:
+    print(element)
+list=sorted(animals)
+index=int(input("Enter a number corresponding to the index:"))
+if index >=0 and index< len(animals):
+    print(animals[index])
+else:
+    print("invalid index!")

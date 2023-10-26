@@ -19,3 +19,13 @@ Enter the replacement:Dan
 ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Dan']
 
 """
+people= ["Alice","Bob","John","Nate","Ella"]
+print("list of people:",people)
+word_to_replace=input("enter a word from the list:")
+new_word=input("enter another word to replace it:")
+if word_to_replace in people:
+    index=people.index(word_to_replace)
+    people[index]=new_word 
+    print("updated list of people:",people)
+else:
+    print("the word is not in the list")
